@@ -6,19 +6,19 @@ import (
 )
 
 func main() {
-	b:=bytes.Map(func(r rune) rune {
-		return r+1
-	},[]byte("345671abc"))
+	b := bytes.Map(func(r rune) rune {
+		return r + 1
+	}, []byte("345671abc"))
 	fmt.Println(string(b))
 	fmt.Println(bytes.HasPrefix(b, []byte("456")))
 	fmt.Println(bytes.HasSuffix(b, []byte("345")))
-	fmt.Println(string(bytes.Repeat(b,3)))
+	fmt.Println(string(bytes.Repeat(b, 3)))
 	fmt.Println(string(bytes.Title(b)))
 	fmt.Println(string(bytes.ToUpper(b)))
 	for i, c := range bytes.Split(b, []byte{'b'}) {
 		fmt.Printf("%d: %s(%d)\n", i, string(c), len(c))
 	}
-	fmt.Println(string(bytes.Replace(b,[]byte("456"),[]byte("abc"),1)))
+	fmt.Println(string(bytes.Replace(b, []byte("456"), []byte("abc"), 1)))
 
 	var b3 *bytes.Buffer
 	fmt.Println(b3.String())
@@ -45,5 +45,5 @@ func main() {
 	b7 := bytes.NewBuffer(nil)
 	b7.WriteString("你好世界")
 	fmt.Println(string(b7.Bytes()))
-}
 
+}
