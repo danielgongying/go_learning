@@ -1,16 +1,15 @@
-package gin
+package main
 
 import (
 	"fmt"
 	"github.com/gin-gonic/gin"
 	"log"
 	"net/http"
-
 )
 
-func bind()  {
+func bind() {
 	type Person struct {
-		ID string `uri:"id" binding:"required,uuid"`
+		ID   string `uri:"id" binding:"required,uuid"`
 		Name string `uri:"name" binding:"required"`
 	}
 	route := gin.Default()
@@ -26,12 +25,12 @@ func bind()  {
 	})
 	route.Run(":8080")
 }
-func try()  {
+func try() {
 	r := gin.Default()
 	r.GET("/ping", func(c *gin.Context) {
 		c.JSON(200, gin.H{
 			"message": "pong",
-			"name": "daniel",
+			"name":    "daniel",
 		})
 	})
 	r.GET("/p1", func(c *gin.Context) {
@@ -44,13 +43,13 @@ func try()  {
 		c.AsciiJSON(http.StatusOK, data)
 		c.PureJSON(200, gin.H{
 			"message": "pong",
-			"name": "daniel",
+			"name":    "daniel",
 		})
 		c.SecureJSON(200, gin.H{
 			"message": "pong",
-			"name": "daniel",
+			"name":    "daniel",
 		})
-		c.String(200,"success")
+		c.String(200, "success")
 	})
 
 	r.GET("/user/:name/*action", func(c *gin.Context) {
