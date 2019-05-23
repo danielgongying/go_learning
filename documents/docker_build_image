@@ -1,0 +1,271 @@
+Last login: Wed May 22 13:15:53 on ttys002
+danielmacpro:~ daniel$ 
+  [恢复于 2019年5月22日 16:02:12]
+Last login: Wed May 22 13:59:24 on ttys002
+danielmacpro:~ daniel$ sudo vi /etc/hosts
+Password:
+danielmacpro:~ daniel$ cd /Users/daniel/Desktop/
+danielmacpro:Desktop daniel$ mkdir ddemo
+danielmacpro:Desktop daniel$ git clone  https://github.com/danielgongying/go_learning.git
+Cloning into 'go_learning'...
+remote: Enumerating objects: 88, done.
+remote: Counting objects: 100% (88/88), done.
+remote: Compressing objects: 100% (77/77), done.
+remote: Total 88 (delta 10), reused 86 (delta 8), pack-reused 0
+Unpacking objects: 100% (88/88), done.
+danielmacpro:Desktop daniel$  docker build https://github.com/danielgongying/go_learning.git#container:docker
+
+unable to prepare context: unable to 'git clone' to temporary context directory: error fetching: fatal: Couldn't find remote ref container
+: exit status 128
+danielmacpro:Desktop daniel$ 
+danielmacpro:Desktop daniel$ git init
+Initialized empty Git repository in /Users/daniel/Desktop/.git/
+danielmacpro:Desktop daniel$  docker build https://github.com/danielgongying/go_learning.git#container:docker
+unable to prepare context: unable to 'git clone' to temporary context directory: error fetching: fatal: Couldn't find remote ref container
+: exit status 128    
+danielmacpro:Desktop daniel$ docker build .
+unable to prepare context: unable to evaluate symlinks in Dockerfile path: lstat /Users/daniel/Desktop/Dockerfile: no such file or directory
+danielmacpro:Desktop daniel$ ls
+ddemo		go_learning	mine
+danielmacpro:Desktop daniel$ cd .
+danielmacpro:Desktop daniel$ pwd
+/Users/daniel/Desktop
+danielmacpro:Desktop daniel$ ls
+ddemo		go_learning	mine
+danielmacpro:Desktop daniel$ cd ..
+danielmacpro:~ daniel$ pwd
+/Users/daniel
+danielmacpro:~ daniel$ ls
+Applications		Library			Public
+Desktop			Movies			WebstormProjects
+Documents		Music			go
+Downloads		Pictures
+danielmacpro:~ daniel$ pwd
+/Users/daniel 
+danielmacpro:~ daniel$ cd ddemo
+-bash: cd: ddemo: No such file or directory
+danielmacpro:~ daniel$ pwd
+/Users/daniel
+danielmacpro:~ daniel$ ls
+Applications		Library			Public
+Desktop			Movies			WebstormProjects
+Documents		Music			go
+Downloads		Pictures
+danielmacpro:~ daniel$ cd ddemo
+-bash: cd: ddemo: No such file or directory
+danielmacpro:~ daniel$ cd /Users/daniel/Desktop/ddemo 
+danielmacpro:ddemo daniel$ pwd
+/Users/daniel/Desktop/ddemo
+danielmacpro:ddemo daniel$ ls
+go_learning
+danielmacpro:ddemo daniel$ git init
+Initialized empty Git repository in /Users/daniel/Desktop/ddemo/.git/
+danielmacpro:ddemo daniel$  docker build https://github.com/danielgongying/go_learning.git#container:docker
+unable to prepare context: unable to 'git clone' to temporary context directory: error fetching: fatal: Couldn't find remote ref container
+: exit status 128
+danielmacpro:ddemo daniel$ cd .
+danielmacpro:ddemo daniel$ pwd
+/Users/daniel/Desktop/ddemo
+danielmacpro:ddemo daniel$ cd.
+-bash: cd.: command not found
+danielmacpro:ddemo daniel$ cd /
+danielmacpro:/ daniel$ pwd
+/
+danielmacpro:/ daniel$ ls
+Applications			etc
+Library				home
+Network				installer.failurerequests
+System				net
+Users				private
+Volumes				sbin
+bin				tmp
+cores				usr
+dev				var
+danielmacpro:/ daniel$ cd /Users/daniel/Desktop/ddemo/go_learning 
+danielmacpro:go_learning daniel$ git init
+Reinitialized existing Git repository in /Users/daniel/Desktop/ddemo/go_learning/.git/
+danielmacpro:go_learning daniel$  docker build https://github.com/danielgongying/go_learning.git#container:docker
+unable to prepare context: unable to 'git clone' to temporary context directory: error fetching: fatal: Couldn't find remote ref container
+: exit status 128
+danielmacpro:go_learning daniel$ docker build .
+unable to prepare context: unable to evaluate symlinks in Dockerfile path: lstat /Users/daniel/Desktop/ddemo/go_learning/Dockerfile: no such file or directory
+danielmacpro:go_learning daniel$ docker build https://github.com/docker/rootfs.git#container:docker
+unable to prepare context: unable to 'git clone' to temporary context directory: error fetching: remote: Repository not found.
+fatal: repository 'https://github.com/docker/rootfs.git/' not found
+: exit status 128
+danielmacpro:go_learning daniel$ docker build https://github.com/danielgongying/go_learning.git#container:docker
+unable to prepare context: unable to 'git clone' to temporary context directory: error fetching: fatal: Couldn't find remote ref container
+: exit status 128
+danielmacpro:go_learning daniel$ cd /Users/daniel/Desktop
+danielmacpro:Desktop daniel$ pwd
+/Users/daniel/Desktop
+danielmacpro:Desktop daniel$ mkdir dockerfiles
+danielmacpro:Desktop daniel$ cd dockerfiles
+danielmacpro:dockerfiles daniel$ pwd
+/Users/daniel/Desktop/dockerfiles
+danielmacpro:dockerfiles daniel$ ls
+danielmacpro:dockerfiles daniel$ touch 
+usage:
+touch [-A [-][[hh]mm]SS] [-acfhm] [-r file] [-t [[CC]YY]MMDDhhmm[.SS]] file ...
+danielmacpro:dockerfiles daniel$ touch dockerfile
+danielmacpro:dockerfiles daniel$ ls
+dockerfile
+danielmacpro:dockerfiles daniel$ delete dockerfile
+-bash: delete: command not found
+danielmacpro:dockerfiles daniel$ ls
+dockerfile
+danielmacpro:dockerfiles daniel$ touch Dockerfile
+danielmacpro:dockerfiles daniel$ ls
+dockerfile
+danielmacpro:dockerfiles daniel$ ls
+danielmacpro:dockerfiles daniel$ touch Dockerfile
+danielmacpro:dockerfiles daniel$ vim Dockerfile
+danielmacpro:dockerfiles daniel$ cat Dockerfile
+FROM scratch
+MAITAINER danielgongying@gmail.com
+RUN apt-get update
+CMD ["echo","hello world....!"]
+
+danielmacpro:dockerfiles daniel$ docker build /Users/daniel/Desktop/dockerfiles 
+Sending build context to Docker daemon  2.048kB
+Error response from daemon: Dockerfile parse error line 2: unknown instruction: MAITAINER
+danielmacpro:dockerfiles daniel$ vim dockerfile
+danielmacpro:dockerfiles daniel$ cat dockerfile
+FROM scratch
+MAINTAINER danielgongying@gmail.com
+RUN apt-get update
+CMD ["echo","hello world....!"]
+
+danielmacpro:dockerfiles daniel$ docker build /Users/daniel/Desktop/dockerfiles 
+Sending build context to Docker daemon  2.048kB
+Step 1/4 : FROM scratch
+ ---> 
+Step 2/4 : MAINTAINER danielgongying@gmail.com
+ ---> Running in 042f5208e9fc
+Removing intermediate container 042f5208e9fc
+ ---> 4dd9bbf61935
+Step 3/4 : RUN apt-get update
+ ---> Running in 5abaafa68942
+OCI runtime create failed: container_linux.go:344: starting container process caused "exec: \"/bin/sh\": stat /bin/sh: no such file or directory": unknown
+danielmacpro:dockerfiles daniel$ docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+<none>              <none>              4dd9bbf61935        5 minutes ago       0B
+mongo               latest              5976dac61f4f        6 days ago          411MB
+nginx               latest              53f3fd8007f7        2 weeks ago         109MB
+golang              latest              b860ab44e93e        5 weeks ago         774MB
+hello-world         latest              fce289e99eb9        4 months ago        1.84kB
+ubuntu              15.10               9b9cb95443b5        2 years ago         137MB
+training/webapp     latest              6fae60ef3446        4 years ago         349MB
+danielmacpro:dockerfiles daniel$ docker build -t myimage1:1.0  /Users/daniel/Desktop/dockerfiles 
+Sending build context to Docker daemon  2.048kB
+Step 1/4 : FROM scratch
+ ---> 
+Step 2/4 : MAINTAINER danielgongying@gmail.com
+ ---> Using cache
+ ---> 4dd9bbf61935
+Step 3/4 : RUN apt-get update
+ ---> Running in 6b02639eae45
+OCI runtime create failed: container_linux.go:344: starting container process caused "exec: \"/bin/sh\": stat /bin/sh: no such file or directory": unknown
+danielmacpro:dockerfiles daniel$ docker build -t myimage1:1.0 .
+Sending build context to Docker daemon  2.048kB
+Step 1/4 : FROM scratch
+ ---> 
+Step 2/4 : MAINTAINER danielgongying@gmail.com
+ ---> Using cache
+ ---> 4dd9bbf61935
+Step 3/4 : RUN apt-get update
+ ---> Running in c6bc5e98dc41
+OCI runtime create failed: container_linux.go:344: starting container process caused "exec: \"/bin/sh\": stat /bin/sh: no such file or directory": unknown
+danielmacpro:dockerfiles daniel$ pwd
+/Users/daniel/Desktop/dockerfiles
+danielmacpro:dockerfiles daniel$ ls
+dockerfile
+danielmacpro:dockerfiles daniel$ vim dockerfile
+danielmacpro:dockerfiles daniel$ docker build -t myimage1:1.0 .
+Sending build context to Docker daemon  2.048kB
+Step 1/4 : FROM node
+latest: Pulling from library/node
+c5e155d5a1d1: Pull complete 
+221d80d00ae9: Pull complete 
+4250b3117dca: Pull complete 
+3b7ca19181b2: Pull complete 
+425d7b2a5bcc: Pull complete 
+69df12c70287: Pull complete 
+9b754a1bcda7: Pull complete 
+74b273083e97: Pull complete 
+Digest: sha256:3d4411d1933dc93e78b9e0de556a22178269952b98cbbea7ca935d890527ae27
+Status: Downloaded newer image for node:latest
+ ---> 502d06d3bfdf
+Step 2/4 : MAINTAINER danielgongying@gmail.com
+ ---> Running in 6847e5ebde38
+Removing intermediate container 6847e5ebde38
+ ---> 7e4270a45620
+Step 3/4 : RUN apt-get update
+ ---> Running in 6e40f6f66d30
+Ign:1 http://deb.debian.org/debian stretch InRelease
+Get:2 http://deb.debian.org/debian stretch-updates InRelease [91.0 kB]
+Get:3 http://security.debian.org/debian-security stretch/updates InRelease [94.3 kB]
+Get:4 http://deb.debian.org/debian stretch Release [118 kB]
+Get:5 http://deb.debian.org/debian stretch Release.gpg [2434 B]
+Get:6 http://security.debian.org/debian-security stretch/updates/main amd64 Packages [492 kB]
+Get:7 http://deb.debian.org/debian stretch-updates/main amd64 Packages [27.2 kB]
+Get:8 http://deb.debian.org/debian stretch/main amd64 Packages [7082 kB]
+Fetched 7907 kB in 2s (2721 kB/s)
+Reading package lists...
+Removing intermediate container 6e40f6f66d30
+ ---> a22f8c84100b
+Step 4/4 : CMD ["echo","hello world....!"]
+ ---> Running in 2fa7713c5a52
+Removing intermediate container 2fa7713c5a52
+ ---> 37bb32e57e25
+Successfully built 37bb32e57e25
+Successfully tagged myimage1:1.0
+danielmacpro:dockerfiles daniel$ docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+myimage1            1.0                 37bb32e57e25        19 seconds ago      923MB
+<none>              <none>              4dd9bbf61935        10 minutes ago      0B
+mongo               latest              5976dac61f4f        6 days ago          411MB
+node                latest              502d06d3bfdf        13 days ago         906MB
+nginx               latest              53f3fd8007f7        2 weeks ago         109MB
+golang              latest              b860ab44e93e        5 weeks ago         774MB
+hello-world         latest              fce289e99eb9        4 months ago        1.84kB
+ubuntu              15.10               9b9cb95443b5        2 years ago         137MB
+training/webapp     latest              6fae60ef3446        4 years ago         349MB
+danielmacpro:dockerfiles daniel$ pwd
+/Users/daniel/Desktop/dockerfiles
+danielmacpro:dockerfiles daniel$ ls
+dockerfile
+danielmacpro:dockerfiles daniel$ docker build -t myimage2:1.0 /Users/daniel/Desktop/dockerfiles 
+Sending build context to Docker daemon  9.216kB
+Step 1/4 : FROM node
+ ---> 502d06d3bfdf
+Step 2/4 : MAINTAINER danielgongying@gmail.com
+ ---> Using cache
+ ---> 7e4270a45620
+Step 3/4 : RUN apt-get update
+ ---> Using cache
+ ---> a22f8c84100b
+Step 4/4 : CMD ["echo","hello world....!"]
+ ---> Using cache
+ ---> 37bb32e57e25
+Successfully built 37bb32e57e25
+Successfully tagged myimage2:1.0
+danielmacpro:dockerfiles daniel$ docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED              SIZE
+myimage1            1.0                 37bb32e57e25        About a minute ago   923MB
+myimage2            1.0                 37bb32e57e25        About a minute ago   923MB
+<none>              <none>              4dd9bbf61935        11 minutes ago       0B
+mongo               latest              5976dac61f4f        6 days ago           411MB
+node                latest              502d06d3bfdf        13 days ago          906MB
+nginx               latest              53f3fd8007f7        2 weeks ago          109MB
+golang              latest              b860ab44e93e        5 weeks ago          774MB
+hello-world         latest              fce289e99eb9        4 months ago         1.84kB
+ubuntu              15.10               9b9cb95443b5        2 years ago          137MB
+training/webapp     latest              6fae60ef3446        4 years ago          349MB
+danielmacpro:dockerfiles daniel$ docker run myimage1
+Unable to find image 'myimage1:latest' locally
+docker: Error response from daemon: pull access denied for myimage1, repository does not exist or may require 'docker login'.
+See 'docker run --help'.
+danielmacpro:dockerfiles daniel$ docker run 37bb32e57e25
+hello world....!
+danielmacpro:dockerfiles daniel$ 

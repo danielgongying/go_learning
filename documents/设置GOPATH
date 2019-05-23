@@ -1,0 +1,206 @@
+Last login: Fri May 10 13:50:20 on ttys002
+danieldeMBP:~ daniel$ pwd
+/Users/daniel
+danieldeMBP:~ daniel$ pwd
+/Users/daniel
+danieldeMBP:~ daniel$ mkdir gocode
+danieldeMBP:~ daniel$ export GOPATH=$HOME/gocode
+danieldeMBP:~ daniel$ cd gocode
+danieldeMBP:gocode daniel$ mkdir -p src/github.com/nf
+danieldeMBP:gocode daniel$ cd src/github.com/nf
+danieldeMBP:nf daniel$ mkdir hello
+danieldeMBP:nf daniel$ pwd
+/Users/daniel/gocode/src/github.com/nf
+danieldeMBP:nf daniel$ cd
+danieldeMBP:~ daniel$ cd hello
+-bash: cd: hello: No such file or directory
+danieldeMBP:~ daniel$ pwd
+/Users/daniel
+danieldeMBP:~ daniel$ ls
+Applications		Library			Public
+Desktop			Movies			WebstormProjects
+Documents		Music			go
+Downloads		Pictures		gocode
+danieldeMBP:~ daniel$ cd ~/hello
+-bash: cd: /Users/daniel/hello: No such file or directory
+danieldeMBP:~ daniel$ cd $HOME/gocode
+danieldeMBP:gocode daniel$ pwd
+/Users/daniel/gocode
+danieldeMBP:gocode daniel$ cd src/github.com/nf/hello
+danieldeMBP:hello daniel$ pwd
+/Users/daniel/gocode/src/github.com/nf/hello
+danieldeMBP:hello daniel$ vim hello.go
+danieldeMBP:hello daniel$ go install
+# github.com/nf/hello
+./hello.go:5:28: newline in string
+./hello.go:5:28: syntax error: unexpected newline, expecting comma or )
+danieldeMBP:hello daniel$ ls ~/gocde/bin
+ls: /Users/daniel/gocde/bin: No such file or directory
+danieldeMBP:hello daniel$ ls ~/gocode/bin/hello
+ls: /Users/daniel/gocode/bin/hello: No such file or directory
+danieldeMBP:hello daniel$ pwd
+/Users/daniel/gocode/src/github.com/nf/hello
+danieldeMBP:hello daniel$ go install
+# github.com/nf/hello
+./hello.go:5:28: newline in string
+./hello.go:5:28: syntax error: unexpected newline, expecting comma or )
+danieldeMBP:hello daniel$ vim hello.go
+danieldeMBP:hello daniel$ go install
+danieldeMBP:hello daniel$  ls ~/gocde/bin
+ls: /Users/daniel/gocde/bin: No such file or directory
+danieldeMBP:hello daniel$ ls ~/gocode/bin
+hello
+danieldeMBP:hello daniel$ ~/gocode/bin/hello
+hello,world
+danieldeMBP:hello daniel$ export PATH=$HOME/gocode/bin:$PATH
+danieldeMBP:hello daniel$ pwd
+/Users/daniel/gocode/src/github.com/nf/hello
+danieldeMBP:hello daniel$ hello
+hello,world
+danieldeMBP:hello daniel$ cd ..
+danieldeMBP:nf daniel$ pwd
+/Users/daniel/gocode/src/github.com/nf
+danieldeMBP:nf daniel$ mkdir string
+danieldeMBP:nf daniel$ cd string
+danieldeMBP:string daniel$ pwd
+/Users/daniel/gocode/src/github.com/nf/string
+danieldeMBP:string daniel$ vim string.go
+danieldeMBP:string daniel$ go install
+# github.com/nf/string
+./string.go:3:7: undefined: bytes
+danieldeMBP:string daniel$ vim string.go
+danieldeMBP:string daniel$ go install
+can't load package: package github.com/nf/string: 
+string.go:2:13: expected 'STRING', found newline
+string.go:3:1: expected ';', found 'func'
+danieldeMBP:string daniel$ vim string.go
+danieldeMBP:string daniel$ go install
+# github.com/nf/string
+./string.go:2:8: imported and not used: "bytes"
+./string.go:4:5: use of package bytes without selector
+danieldeMBP:string daniel$ vim string.go
+danieldeMBP:string daniel$ go install
+can't load package: package github.com/nf/string: 
+string.go:1:1: expected 'package', found ackage
+danieldeMBP:string daniel$ go build
+can't load package: package github.com/nf/string: 
+string.go:1:1: expected 'package', found ackage
+danieldeMBP:string daniel$ vim string.go
+danieldeMBP:string daniel$ go build
+# github.com/nf/string
+./string.go:2:8: imported and not used: "bytes"
+danieldeMBP:string daniel$ vim string.go
+danieldeMBP:string daniel$ go build
+# github.com/nf/string
+./string.go:2:8: imported and not used: "bytes"
+danieldeMBP:string daniel$ go install
+# github.com/nf/string
+./string.go:2:8: imported and not used: "bytes"
+danieldeMBP:string daniel$ vim string.go
+danieldeMBP:string daniel$ go build
+danieldeMBP:string daniel$ go install
+danieldeMBP:string daniel$ ls ~/gocode/pkg/darwin_amd64/github.com/nf
+string.a
+danieldeMBP:string daniel$ cd ../hello
+danieldeMBP:hello daniel$ pwd
+/Users/daniel/gocode/src/github.com/nf/hello
+danieldeMBP:hello daniel$ ls
+hello.go
+danieldeMBP:hello daniel$ vim hello.go
+danieldeMBP:hello daniel$ go install
+can't load package: package github.com/nf/hello: 
+hello.go:3:8: expected 'STRING', found '{'
+danieldeMBP:hello daniel$ vim string.go
+danieldeMBP:hello daniel$ pwd
+/Users/daniel/gocode/src/github.com/nf/hello
+danieldeMBP:hello daniel$ cd .
+danieldeMBP:hello daniel$ pwd
+/Users/daniel/gocode/src/github.com/nf/hello
+danieldeMBP:hello daniel$ cd.
+-bash: cd.: command not found
+danieldeMBP:hello daniel$ cd .
+danieldeMBP:hello daniel$ pwd
+/Users/daniel/gocode/src/github.com/nf/hello
+danieldeMBP:hello daniel$ ls
+hello.go
+danieldeMBP:hello daniel$ pwd
+/Users/daniel/gocode/src/github.com/nf/hello
+danieldeMBP:hello daniel$ cd hello
+-bash: cd: hello: No such file or directory
+danieldeMBP:hello daniel$ pwd
+/Users/daniel/gocode/src/github.com/nf/hello
+danieldeMBP:hello daniel$ ls
+hello.go
+danieldeMBP:hello daniel$ go install
+can't load package: package github.com/nf/hello: 
+hello.go:3:8: expected 'STRING', found '{'
+danieldeMBP:hello daniel$ cd /Users/daniel/gocode/src/github.com/nf/string 
+danieldeMBP:string daniel$ vim string.go
+danieldeMBP:string daniel$ go build
+danieldeMBP:string daniel$ cd /Users/daniel/gocode/src/github.com/nf/hello 
+danieldeMBP:hello daniel$ vim hello.go
+danieldeMBP:hello daniel$ go install
+can't load package: package github.com/nf/hello: 
+hello.go:3:8: expected 'STRING', found '{'
+danieldeMBP:hello daniel$ vim hello.go
+danieldeMBP:hello daniel$ go install
+can't load package: package github.com/nf/hello: 
+hello.go:3:8: expected 'STRING', found '{'
+danieldeMBP:hello daniel$ cd /Users/daniel/gocode/src/github.com/nf/string 
+danieldeMBP:string daniel$ ls
+string		string.go
+danieldeMBP:string daniel$ string
+-bash: string: command not found
+danieldeMBP:string daniel$ go install
+danieldeMBP:string daniel$ vim string.go
+danieldeMBP:string daniel$ cd /Users/daniel/gocode/src/github.com/nf/hello 
+danieldeMBP:hello daniel$ go install
+can't load package: package github.com/nf/hello: 
+hello.go:3:8: expected 'STRING', found '{'
+danieldeMBP:hello daniel$ hello
+hello,world
+danieldeMBP:hello daniel$ vim hello.go
+danieldeMBP:hello daniel$ go install
+can't load package: package github.com/nf/hello: 
+hello.go:3:8: expected 'STRING', found '{'
+danieldeMBP:hello daniel$ heloo
+-bash: heloo: command not found
+danieldeMBP:hello daniel$ hello
+hello,world
+danieldeMBP:hello daniel$ cd /Users/daniel/gocode/src/github.com/nf/string
+danieldeMBP:string daniel$ go build
+danieldeMBP:string daniel$ cd /Users/daniel/gocode/src/github.com/nf/hello
+danieldeMBP:hello daniel$ go install
+can't load package: package github.com/nf/hello: 
+hello.go:3:8: expected 'STRING', found '{'
+danieldeMBP:hello daniel$ hello
+hello,world
+danieldeMBP:hello daniel$ go env
+GOARCH="amd64"
+GOBIN=""
+GOCACHE="/Users/daniel/Library/Caches/go-build"
+GOEXE=""
+GOFLAGS=""
+GOHOSTARCH="amd64"
+GOHOSTOS="darwin"
+GOOS="darwin"
+GOPATH="/Users/daniel/gocode"
+GOPROXY=""
+GORACE=""
+GOROOT="/usr/local/go"
+GOTMPDIR=""
+GOTOOLDIR="/usr/local/go/pkg/tool/darwin_amd64"
+GCCGO="gccgo"
+CC="clang"
+CXX="clang++"
+CGO_ENABLED="1"
+GOMOD=""
+CGO_CFLAGS="-g -O2"
+CGO_CPPFLAGS=""
+CGO_CXXFLAGS="-g -O2"
+CGO_FFLAGS="-g -O2"
+CGO_LDFLAGS="-g -O2"
+PKG_CONFIG="pkg-config"
+GOGCCFLAGS="-fPIC -m64 -pthread -fno-caret-diagnostics -Qunused-arguments -fmessage-length=0 -fdebug-prefix-map=/var/folders/m3/srdplnrs4_z4c1qf5hd6bm2r0000gn/T/go-build041831360=/tmp/go-build -gno-record-gcc-switches -fno-common"
+danieldeMBP:hello daniel$ go get github.com/astaxie/beego
+danieldeMBP:hello daniel$ 

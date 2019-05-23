@@ -245,7 +245,91 @@ func modleBind() {
 
 
 }
+/*只绑定Get参数*/
+func onlyGetBind()  {
+	type Person struct {
+		Name    string `form:"name"`
+		Address string `form:"address"`
+	}
+	router:=gin.Default()
+	router.GET("/testing", func(c *gin.Context) {
+		var person Person
+		if c.ShouldBindQuery(&person) == nil	{
+			fmt.Println("====== Only Bind By Query String ======")
+			log.Println(person.Address)
+			log.Println(person.Name)
 
+		}
+		c.String(200,"succeed")
+
+	})
+	router.Run()
+	
+}
+func bindUri()  {
+	type Person struct {
+		ID string `uri:"id" binding:"required,uuid"`
+		Name string `uri:"name" binding:"required"`
+	}
+	router:=gin.Default()
+	router.GET("/:name/:id", func(c *gin.Context) {
+		var person Person
+		err:=c.ShouldBindUri(&person)
+		if err != nil {
+			//c.JSON(400,gin.H{"msg": err})
+			fmt.Println(err)
+		}
+		c.JSON(200,gin.H{"name":person.Name,"id":person.ID})
+
+	})
+	router.Run()
+
+
+}
+/*绑定Post参数
+ */
+func onlyPostBind()  {
+	type LoginForm struct {
+		User     string `form:"user" binding:"required"`
+		Password string `form:"password" binding:"required"`
+	}
+	router := gin.Default()
+	router.POST("/login", func(c *gin.Context) {
+		// you can bind multipart form with explicit binding declaration:
+		// c.ShouldBindWith(&form, binding.Form)
+		// or you can simply use autobinding with ShouldBind method:
+		var form LoginForm
+		// in this case proper binding will be automatically selected
+		if c.ShouldBind(&form) == nil {
+			if form.User == "user" && form.Password == "password" {
+				c.JSON(200, gin.H{"status": "you are logged in"})
+			} else {
+				c.JSON(401, gin.H{"status": "unauthorized"})
+			}
+		}
+	})
+	router.Run(":8080")
+}
+/*设置并获取cookie
+ */
+func getCookies()  {
+	router := gin.Default()
+
+	router.GET("/cookie", func(c *gin.Context) {
+
+		cookie, err := c.Cookie("gin_cookie")
+
+		if err != nil {
+			cookie = "NotSet"
+			c.SetCookie("gin_cookie", "test", 3600, "/", "localhost", false, true)
+		}
+
+		fmt.Printf("Cookie value: %s \n", cookie)
+	})
+
+	router.Run()
+	
+}
 func main() {
 	//routerParams()
 	//getParams()
@@ -254,7 +338,13 @@ func main() {
 	//upload()
 	//ginlog()
 	//customLog()
-	modleBind()
+	//modleBind()
+	//onlyGetBind()
+	//bindUri()
+	//onlyPostBind()
+	getCookies()
 }
+
+
 
 
