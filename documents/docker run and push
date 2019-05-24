@@ -1,0 +1,515 @@
+Last login: Fri May 24 13:34:29 on ttys000
+danielmacpro:~ daniel$ docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+mongo               latest              5976dac61f4f        8 days ago          411MB
+ubuntu              latest              7698f282e524        8 days ago          69.9MB
+node                latest              502d06d3bfdf        2 weeks ago         906MB
+nginx               latest              53f3fd8007f7        2 weeks ago         109MB
+golang              latest              b860ab44e93e        5 weeks ago         774MB
+hello-world         latest              fce289e99eb9        4 months ago        1.84kB
+training/webapp     latest              6fae60ef3446        4 years ago         349MB
+danielmacpro:~ daniel$ ls
+Applications		Library			Public
+Desktop			Movies			WebstormProjects
+Documents		Music			go
+Downloads		Pictures
+danielmacpro:~ daniel$ cd /Users/daniel/Desktop/godocker 
+danielmacpro:godocker daniel$ docker build -t myimage:v1 .
+Sending build context to Docker daemon  23.04kB
+Step 1/6 : FROM golang:latest
+ ---> b860ab44e93e
+Step 2/6 : RUN mkdir /app
+ ---> Running in a808df0f8421
+Removing intermediate container a808df0f8421
+ ---> 2a0ce93b4c42
+Step 3/6 : ADD . /app/
+ ---> 7d4945872ab1
+Step 4/6 : WORKDIR /app
+ ---> Running in fa5c00df4ded
+Removing intermediate container fa5c00df4ded
+ ---> 536b3fdad3ba
+Step 5/6 : RUN go build -o main .
+ ---> Running in 59c1db3ee8ed
+Removing intermediate container 59c1db3ee8ed
+ ---> 0b3132720ef8
+Step 6/6 : CMD ["/app/main"]
+ ---> Running in 9d51ef3e4824
+Removing intermediate container 9d51ef3e4824
+ ---> 24df22a8b7dc
+Successfully built 24df22a8b7dc
+Successfully tagged myimage:v1
+danielmacpro:godocker daniel$ docker run -it --rm myimage:v1 -p 8080:8080
+docker: Error response from daemon: OCI runtime create failed: container_linux.go:344: starting container process caused "exec: \"-p\": executable file not found in $PATH": unknown.
+danielmacpro:godocker daniel$ docker run -d -p 80:80 --name nginx
+"docker run" requires at least 1 argument.
+See 'docker run --help'.
+
+Usage:  docker run [OPTIONS] IMAGE [COMMAND] [ARG...]
+
+Run a command in a new container
+danielmacpro:godocker daniel$ docker run -d -p 80:80 myimage:v1  nginx
+f8df84811e68d0852d15b13adc7e6c9011c2a5ebea29de6fa6ca172e65933ff5
+docker: Error response from daemon: OCI runtime create failed: container_linux.go:344: starting container process caused "exec: \"nginx\": executable file not found in $PATH": unknown.
+danielmacpro:godocker daniel$ vim dockerfile
+danielmacpro:godocker daniel$ cat dockerfile
+FROM golang:latest
+RUN mkdir /app
+EXPOSE 8080 
+ADD . /app/ 
+WORKDIR /app 
+RUN go build -o main . 
+CMD ["/app/main"]
+danielmacpro:godocker daniel$ docker run -it --rm --name ma-instance -p 8080:8080 \
+> 
+danielmacpro:godocker daniel$ docker run -p 8000:8000 myimage:v1
+^Cdanielmacpro:godocker daniel$ docker run -p 8000:8000 myimage:v1 myimage:v1 
+docker: Error response from daemon: OCI runtime create failed: container_linux.go:344: starting container process caused "exec: \"myimage:v1\": executable file not found in $PATH": unknown.
+danielmacpro:godocker daniel$ docker run --rm -it -p 8000:8000 myimage:v1
+^Cdanielmacpro:godocker daniel$ docker run --rm -it -p 8080:8080 myimage:v1
+^Cdanielmacpro:godocker daniel$ 
+danielmacpro:godocker daniel$ vim
+danielmacpro:godocker daniel$ vim dockerfile
+danielmacpro:godocker daniel$ clear
+
+danielmacpro:godocker daniel$ cd /Users/daniel/Desktop/godocker 
+danielmacpro:godocker daniel$ touch dockerfile
+danielmacpro:godocker daniel$ vim dockerfile
+danielmacpro:godocker daniel$ cat dockerfile
+FROM golang:latest
+RUN mkdir /app0 
+ADD . /app/ 
+WORKDIR /app 
+RUN go build -o main . 
+CMD ["/app/main"]
+danielmacpro:godocker daniel$ docker build -t myimage2:v1 .
+Sending build context to Docker daemon  23.04kB
+Step 1/6 : FROM golang:latest
+ ---> b860ab44e93e
+Step 2/6 : RUN mkdir /app0
+ ---> Running in 932dd450b092
+Removing intermediate container 932dd450b092
+ ---> e7cb3c0aff58
+Step 3/6 : ADD . /app/
+ ---> d36e1d92e02a
+Step 4/6 : WORKDIR /app
+ ---> Running in 113102a886fc
+Removing intermediate container 113102a886fc
+ ---> 858a0a37bf03
+Step 5/6 : RUN go build -o main .
+ ---> Running in bd17b7c3108d
+Removing intermediate container bd17b7c3108d
+ ---> 000a0a24f404
+Step 6/6 : CMD ["/app/main"]
+ ---> Running in 5c3f4a2f0791
+Removing intermediate container 5c3f4a2f0791
+ ---> 2a34f4cc377e
+Successfully built 2a34f4cc377e
+Successfully tagged myimage2:v1
+danielmacpro:godocker daniel$ docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+myimage2            v1                  2a34f4cc377e        4 seconds ago       781MB
+myimage             v1                  24df22a8b7dc        24 minutes ago      781MB
+mongo               latest              5976dac61f4f        8 days ago          411MB
+ubuntu              latest              7698f282e524        8 days ago          69.9MB
+node                latest              502d06d3bfdf        2 weeks ago         906MB
+nginx               latest              53f3fd8007f7        2 weeks ago         109MB
+golang              latest              b860ab44e93e        5 weeks ago         774MB
+hello-world         latest              fce289e99eb9        4 months ago        1.84kB
+training/webapp     latest              6fae60ef3446        4 years ago         349MB
+danielmacpro:godocker daniel$ docker docker run --rm -it -p 8080:8080 myimage2:v1
+unknown flag: --rm
+See 'docker --help'.
+
+Usage:	docker [OPTIONS] COMMAND
+
+A self-sufficient runtime for containers
+
+Options:
+      --config string      Location of client config files (default
+                           "/Users/daniel/.docker")
+  -D, --debug              Enable debug mode
+  -H, --host list          Daemon socket(s) to connect to
+  -l, --log-level string   Set the logging level
+                           ("debug"|"info"|"warn"|"error"|"fatal")
+                           (default "info")
+      --tls                Use TLS; implied by --tlsverify
+      --tlscacert string   Trust certs signed only by this CA (default
+                           "/Users/daniel/.docker/ca.pem")
+      --tlscert string     Path to TLS certificate file (default
+                           "/Users/daniel/.docker/cert.pem")
+      --tlskey string      Path to TLS key file (default
+                           "/Users/daniel/.docker/key.pem")
+      --tlsverify          Use TLS and verify the remote
+  -v, --version            Print version information and quit
+
+Management Commands:
+  builder     Manage builds
+  checkpoint  Manage checkpoints
+  config      Manage Docker configs
+  container   Manage containers
+  image       Manage images
+  manifest    Manage Docker image manifests and manifest lists
+  network     Manage networks
+  node        Manage Swarm nodes
+  plugin      Manage plugins
+  secret      Manage Docker secrets
+  service     Manage services
+  stack       Manage Docker stacks
+  swarm       Manage Swarm
+  system      Manage Docker
+  trust       Manage trust on Docker images
+  volume      Manage volumes
+
+Commands:
+  attach      Attach local standard input, output, and error streams to a running container
+  build       Build an image from a Dockerfile
+  commit      Create a new image from a container's changes
+  cp          Copy files/folders between a container and the local filesystem
+  create      Create a new container
+  deploy      Deploy a new stack or update an existing stack
+  diff        Inspect changes to files or directories on a container's filesystem
+  events      Get real time events from the server
+  exec        Run a command in a running container
+  export      Export a container's filesystem as a tar archive
+  history     Show the history of an image
+  images      List images
+  import      Import the contents from a tarball to create a filesystem image
+  info        Display system-wide information
+  inspect     Return low-level information on Docker objects
+  kill        Kill one or more running containers
+  load        Load an image from a tar archive or STDIN
+  login       Log in to a Docker registry
+  logout      Log out from a Docker registry
+  logs        Fetch the logs of a container
+  pause       Pause all processes within one or more containers
+  port        List port mappings or a specific mapping for the container
+  ps          List containers
+  pull        Pull an image or a repository from a registry
+  push        Push an image or a repository to a registry
+  rename      Rename a container
+  restart     Restart one or more containers
+  rm          Remove one or more containers
+  rmi         Remove one or more images
+  run         Run a command in a new container
+  save        Save one or more images to a tar archive (streamed to STDOUT by default)
+  search      Search the Docker Hub for images
+  start       Start one or more stopped containers
+  stats       Display a live stream of container(s) resource usage statistics
+  stop        Stop one or more running containers
+  tag         Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
+  top         Display the running processes of a container
+  unpause     Unpause all processes within one or more containers
+  update      Update configuration of one or more containers
+  version     Show the Docker version information
+  wait        Block until one or more containers stop, then print their exit codes
+
+Run 'docker COMMAND --help' for more information on a command.
+
+danielmacpro:godocker daniel$ vim dockerfile
+danielmacpro:godocker daniel$ docker docker run --rm -it -p 8080:8080 myimage2:v1
+unknown flag: --rm
+See 'docker --help'.
+
+Usage:	docker [OPTIONS] COMMAND
+
+A self-sufficient runtime for containers
+
+Options:
+      --config string      Location of client config files (default
+                           "/Users/daniel/.docker")
+  -D, --debug              Enable debug mode
+  -H, --host list          Daemon socket(s) to connect to
+  -l, --log-level string   Set the logging level
+                           ("debug"|"info"|"warn"|"error"|"fatal")
+                           (default "info")
+      --tls                Use TLS; implied by --tlsverify
+      --tlscacert string   Trust certs signed only by this CA (default
+                           "/Users/daniel/.docker/ca.pem")
+      --tlscert string     Path to TLS certificate file (default
+                           "/Users/daniel/.docker/cert.pem")
+      --tlskey string      Path to TLS key file (default
+                           "/Users/daniel/.docker/key.pem")
+      --tlsverify          Use TLS and verify the remote
+  -v, --version            Print version information and quit
+
+Management Commands:
+  builder     Manage builds
+  checkpoint  Manage checkpoints
+  config      Manage Docker configs
+  container   Manage containers
+  image       Manage images
+  manifest    Manage Docker image manifests and manifest lists
+  network     Manage networks
+  node        Manage Swarm nodes
+  plugin      Manage plugins
+  secret      Manage Docker secrets
+  service     Manage services
+  stack       Manage Docker stacks
+  swarm       Manage Swarm
+  system      Manage Docker
+  trust       Manage trust on Docker images
+  volume      Manage volumes
+
+Commands:
+  attach      Attach local standard input, output, and error streams to a running container
+  build       Build an image from a Dockerfile
+  commit      Create a new image from a container's changes
+  cp          Copy files/folders between a container and the local filesystem
+  create      Create a new container
+  deploy      Deploy a new stack or update an existing stack
+  diff        Inspect changes to files or directories on a container's filesystem
+  events      Get real time events from the server
+  exec        Run a command in a running container
+  export      Export a container's filesystem as a tar archive
+  history     Show the history of an image
+  images      List images
+  import      Import the contents from a tarball to create a filesystem image
+  info        Display system-wide information
+  inspect     Return low-level information on Docker objects
+  kill        Kill one or more running containers
+  load        Load an image from a tar archive or STDIN
+  login       Log in to a Docker registry
+  logout      Log out from a Docker registry
+  logs        Fetch the logs of a container
+  pause       Pause all processes within one or more containers
+  port        List port mappings or a specific mapping for the container
+  ps          List containers
+  pull        Pull an image or a repository from a registry
+  push        Push an image or a repository to a registry
+  rename      Rename a container
+  restart     Restart one or more containers
+  rm          Remove one or more containers
+  rmi         Remove one or more images
+  run         Run a command in a new container
+  save        Save one or more images to a tar archive (streamed to STDOUT by default)
+  search      Search the Docker Hub for images
+  start       Start one or more stopped containers
+  stats       Display a live stream of container(s) resource usage statistics
+  stop        Stop one or more running containers
+  tag         Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
+  top         Display the running processes of a container
+  unpause     Unpause all processes within one or more containers
+  update      Update configuration of one or more containers
+  version     Show the Docker version information
+  wait        Block until one or more containers stop, then print their exit codes
+
+Run 'docker COMMAND --help' for more information on a command.
+
+danielmacpro:godocker daniel$ docker run --rm -it -p 8000:8000 myimage:v1
+clear
+^Cdanielmacpro:godocker daniel$ clear
+
+danielmacpro:godocker daniel$ docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+myimage2            v1                  2a34f4cc377e        2 minutes ago       781MB
+myimage             v1                  24df22a8b7dc        27 minutes ago      781MB
+mongo               latest              5976dac61f4f        8 days ago          411MB
+ubuntu              latest              7698f282e524        8 days ago          69.9MB
+node                latest              502d06d3bfdf        2 weeks ago         906MB
+nginx               latest              53f3fd8007f7        2 weeks ago         109MB
+golang              latest              b860ab44e93e        5 weeks ago         774MB
+hello-world         latest              fce289e99eb9        4 months ago        1.84kB
+training/webapp     latest              6fae60ef3446        4 years ago         349MB
+danielmacpro:godocker daniel$ docker run --rm -it -p 8000:8000 myimage:v1
+^Cdanielmacpro:godocker daniel$ vim dockerfile
+danielmacpro:godocker daniel$ docker rmi -f myimage:v1
+Untagged: myimage:v1
+Deleted: sha256:24df22a8b7dcff43a16c1a1a87bed287a6c3e27f0bc28ec6856ebc723bfe174f
+Deleted: sha256:0b3132720ef82545b43434cb9abcedea2ec1f8b609336777f5f441d6389f4dcf
+Deleted: sha256:536b3fdad3bad535318a7190520fa0d979b1086c995c587ce4abe7f4a66a6d21
+Deleted: sha256:7d4945872ab1cc0461dcd411bc1b58e72a1b7aa4375419f425bc8bcb806d181d
+Deleted: sha256:2a0ce93b4c42ccf138f05c9ec95ab47447e1c20800223cdaa914b053cb13ffd9
+danielmacpro:godocker daniel$ docker rmi -f myimage2:v1
+Untagged: myimage2:v1
+Deleted: sha256:2a34f4cc377e2c7b129c736a8585481d2015ac7fd32ccc803e2b1f06c597522c
+Deleted: sha256:000a0a24f4042d002913999cc09bae71d4f3ccfa6717e646037e53fecf437888
+Deleted: sha256:3eb7f8a49112fabae2faafa5764b95336aba61260f6c0275b4ece168dd47edb7
+Deleted: sha256:858a0a37bf033a56aeca499299252867ac1316eb3b1883d936fb63ab6bfd09e3
+Deleted: sha256:d36e1d92e02a9e97b4054461d1eb7db0f64652458e04fffaa913a8bee67832a2
+Deleted: sha256:1f276dc5369271b7fc2d6e02f17fc2a72a8db0f2fff8053bfe2244142d5b97a7
+Deleted: sha256:e7cb3c0aff5862886917d4d9cc06ca9eb264a25769aa23a0a1e48454d7433c37
+Deleted: sha256:3ffcd564ec4966b73b0848469cc05aa12d26e829254256c9152d5e7fd260bb35
+danielmacpro:godocker daniel$ docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+mongo               latest              5976dac61f4f        8 days ago          411MB
+ubuntu              latest              7698f282e524        8 days ago          69.9MB
+node                latest              502d06d3bfdf        2 weeks ago         906MB
+nginx               latest              53f3fd8007f7        2 weeks ago         109MB
+golang              latest              b860ab44e93e        5 weeks ago         774MB
+hello-world         latest              fce289e99eb9        4 months ago        1.84kB
+training/webapp     latest              6fae60ef3446        4 years ago         349MB
+danielmacpro:godocker daniel$ docker build -t myimage:v1 .
+Sending build context to Docker daemon  23.04kB
+Step 1/7 : FROM golang:latest
+ ---> b860ab44e93e
+Step 2/7 : RUN mkdir /app
+ ---> Running in fb2ff1b4a888
+Removing intermediate container fb2ff1b4a888
+ ---> cbc5f30b9f5b
+Step 3/7 : EXPOSE 8080
+ ---> Running in a05bf39a0d9e
+Removing intermediate container a05bf39a0d9e
+ ---> 6599fd503ae9
+Step 4/7 : ADD . /app/
+ ---> 7ba938bc7bfd
+Step 5/7 : WORKDIR /app
+ ---> Running in c22ae831c6e6
+Removing intermediate container c22ae831c6e6
+ ---> 6f5b8511403f
+Step 6/7 : RUN go build -o main .
+ ---> Running in 8984deec5276
+Removing intermediate container 8984deec5276
+ ---> 5874e5607cd3
+Step 7/7 : CMD ["/app/main"]
+ ---> Running in 3866503cc87c
+Removing intermediate container 3866503cc87c
+ ---> 4e4a7599fed6
+Successfully built 4e4a7599fed6
+Successfully tagged myimage:v1
+danielmacpro:godocker daniel$ docker run --rm -it -p 8000:8000 myimage:v1
+^Cdanielmacpro:godocker daniel$ 
+danielmacpro:godocker daniel$ docker ps
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+danielmacpro:godocker daniel$ docker run --rm it -p 8080:8080 myimage:v1
+Unable to find image 'it:latest' locally
+docker: Error response from daemon: pull access denied for it, repository does not exist or may require 'docker login'.
+See 'docker run --help'.
+danielmacpro:godocker daniel$ docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED              SIZE
+myimage             v1                  4e4a7599fed6        About a minute ago   781MB
+mongo               latest              5976dac61f4f        8 days ago           411MB
+ubuntu              latest              7698f282e524        8 days ago           69.9MB
+node                latest              502d06d3bfdf        2 weeks ago          906MB
+nginx               latest              53f3fd8007f7        2 weeks ago          109MB
+golang              latest              b860ab44e93e        5 weeks ago          774MB
+hello-world         latest              fce289e99eb9        4 months ago         1.84kB
+training/webapp     latest              6fae60ef3446        4 years ago          349MB
+danielmacpro:godocker daniel$ docker run -d -p 8080:80 myimage:v1 service nginx start
+c85de9d3c9f7d87ccca437cc9c696c230ab6fde03d8475ac8c3f4600559b1e5a
+danielmacpro:godocker daniel$ docker ps
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+danielmacpro:godocker daniel$ docker ps -l
+CONTAINER ID        IMAGE               COMMAND                 CREATED             STATUS                      PORTS               NAMES
+c85de9d3c9f7        myimage:v1          "service nginx start"   26 seconds ago      Exited (1) 25 seconds ago                       suspicious_spence
+danielmacpro:godocker daniel$ docker ps -a
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS                         PORTS                    NAMES
+c85de9d3c9f7        myimage:v1          "service nginx start"    2 minutes ago       Exited (1) 2 minutes ago                                suspicious_spence
+b5910acfd3f5        24df22a8b7dc        "myimage:v1"             24 minutes ago      Created                        0.0.0.0:8000->8000/tcp   xenodochial_noether
+854208d8bff9        24df22a8b7dc        "/app/main"              24 minutes ago      Exited (2) 24 minutes ago                               ecstatic_kilby
+f8df84811e68        24df22a8b7dc        "nginx"                  30 minutes ago      Created                        0.0.0.0:80->80/tcp       elated_jackson
+af9b3ad8675f        hello-world         "/hello"                 About an hour ago   Exited (0) About an hour ago                            brave_vaughan
+c1e74d9b33a4        6fae60ef3446        "python app.py"          About an hour ago   Exited (0) About an hour ago                            trusting_sanderson
+2657ec7b450f        nginx               "nginx -g 'daemon of…"   About an hour ago   Exited (0) About an hour ago                            thirsty_visvesvaraya
+12610150a999        dc674f5974df        "/app/main"              About an hour ago   Exited (2) About an hour ago                            jolly_buck
+75430fb9190e        dc674f5974df        "/app/main"              About an hour ago   Exited (2) About an hour ago                            suspicious_panini
+67c32b08b5d9        120fc8a5eb20        "/app/main"              About an hour ago   Exited (2) About an hour ago                            upbeat_wozniak
+c7f53a0a9d47        120fc8a5eb20        "/app/main"              About an hour ago   Exited (2) About an hour ago                            cranky_ride
+c61211f0bbee        2a81e373b717        "/app/main"              About an hour ago   Exited (0) About an hour ago                            amazing_snyder
+7ec520b46e46        2a81e373b717        "/app/main"              About an hour ago   Exited (0) About an hour ago                            naughty_yalow
+24887442f479        hello-world         "/hello"                 20 hours ago        Exited (0) 20 hours ago                                 gracious_mayer
+2fe8f4968590        hello-world         "/hello"                 44 hours ago        Exited (0) 44 hours ago                                 mystifying_kalam
+2ace243042e2        fce289e99eb9        "/hello"                 44 hours ago        Exited (0) 44 hours ago                                 optimistic_lewin
+4bc8d3db102c        37bb32e57e25        "echo 'hello world..…"   45 hours ago        Exited (0) 45 hours ago                                 objective_hypatia
+c6bc5e98dc41        4dd9bbf61935        "/bin/sh -c 'apt-get…"   45 hours ago        Created                                                 reverent_chatterjee
+6b02639eae45        4dd9bbf61935        "/bin/sh -c 'apt-get…"   45 hours ago        Created                                                 dazzling_taussig
+5abaafa68942        4dd9bbf61935        "/bin/sh -c 'apt-get…"   46 hours ago        Created                                                 youthful_galois
+c39ba96faa28        nginx               "nginx -g 'daemon of…"   2 days ago          Exited (0) 2 days ago                                   fce289e99eb9
+9e2c6b5af861        nginx               "nginx -g 'daemon of…"   2 days ago          Exited (0) 2 days ago                                   6fae60ef3446
+facd78f9b87f        training/webapp     "-d -p 80:80 nginx"      2 days ago          Created                        5000/tcp                 suspicious_montalcini
+d589470eaf38        hello-world         "/hello"                 2 days ago          Exited (0) 2 days ago                                   amazing_clarke
+df182c7eb5d7        hello-world         "/hello"                 3 weeks ago         Exited (0) 3 weeks ago                                  lucid_dewdney
+ad74cc061498        hello-world         "/hello"                 3 weeks ago         Exited (0) 3 weeks ago                                  elastic_mccarthy
+2b3980f6a74a        9b9cb95443b5        "/bin/bash"              4 weeks ago         Exited (0) 4 weeks ago                                  musing_jang
+b40ae33348bc        9b9cb95443b5        "/bin/echo 'Hello wo…"   4 weeks ago         Exited (0) 4 weeks ago                                  focused_dewdney
+danielmacpro:godocker daniel$ docker ps -l
+CONTAINER ID        IMAGE               COMMAND                 CREATED             STATUS                     PORTS               NAMES
+c85de9d3c9f7        myimage:v1          "service nginx start"   2 minutes ago       Exited (1) 2 minutes ago                       suspicious_spence
+danielmacpro:godocker daniel$ docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+myimage             v1                  4e4a7599fed6        7 minutes ago       781MB
+mongo               latest              5976dac61f4f        8 days ago          411MB
+ubuntu              latest              7698f282e524        8 days ago          69.9MB
+node                latest              502d06d3bfdf        2 weeks ago         906MB
+nginx               latest              53f3fd8007f7        2 weeks ago         109MB
+golang              latest              b860ab44e93e        5 weeks ago         774MB
+hello-world         latest              fce289e99eb9        4 months ago        1.84kB
+training/webapp     latest              6fae60ef3446        4 years ago         349MB
+danielmacpro:godocker daniel$ docker run -d -p 8080:8080 myimage:v1
+639fc91f5872a5616a068b343264a7f4e541ff0db656a4b5fc75ce34d068028e
+danielmacpro:godocker daniel$ docker run -d -p 8080:80  myimage:v1
+ae6c4d8cd48ab8128dccb41e3fd43eb5e65817270ac644e607ade39c2c0f9420
+docker: Error response from daemon: driver failed programming external connectivity on endpoint stupefied_kalam (4e93eec10dea5b888968b6b4ca2261f7dddc0787329d24d3ce4d3f09617341b7): Bind for 0.0.0.0:8080 failed: port is already allocated.
+danielmacpro:godocker daniel$ docker stop image:v1
+Error response from daemon: No such container: image:v1
+danielmacpro:godocker daniel$ docker stop 4e4a7599fed6
+Error response from daemon: No such container: 4e4a7599fed6
+danielmacpro:godocker daniel$ docker ps -l
+CONTAINER ID        IMAGE               COMMAND             CREATED              STATUS              PORTS               NAMES
+ae6c4d8cd48a        myimage:v1          "/app/main"         About a minute ago   Created                                 stupefied_kalam
+danielmacpro:godocker daniel$ docker ps -l
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+ae6c4d8cd48a        myimage:v1          "/app/main"         2 minutes ago       Created                                 stupefied_kalam
+danielmacpro:godocker daniel$ docker stop --time=2 myimage:v1
+Error response from daemon: No such container: myimage:v1
+danielmacpro:godocker daniel$ docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+myimage             v1                  4e4a7599fed6        15 minutes ago      781MB
+mongo               latest              5976dac61f4f        8 days ago          411MB
+ubuntu              latest              7698f282e524        8 days ago          69.9MB
+node                latest              502d06d3bfdf        2 weeks ago         906MB
+nginx               latest              53f3fd8007f7        2 weeks ago         109MB
+golang              latest              b860ab44e93e        5 weeks ago         774MB
+hello-world         latest              fce289e99eb9        4 months ago        1.84kB
+training/webapp     latest              6fae60ef3446        4 years ago         349MB
+danielmacpro:godocker daniel$ docker stop myimage:v1
+Error response from daemon: No such container: myimage:v1
+danielmacpro:godocker daniel$ docker kill myimage:v1
+Error response from daemon: Cannot kill container: myimage:v1: No such container: myimage:v1
+danielmacpro:godocker daniel$ docker ps-l
+docker: 'ps-l' is not a docker command.
+See 'docker --help'
+danielmacpro:godocker daniel$ docker ps -l
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+ae6c4d8cd48a        myimage:v1          "/app/main"         3 minutes ago       Created                                 stupefied_kalam
+danielmacpro:godocker daniel$ ls
+dockerfile	main.go
+danielmacpro:godocker daniel$ docker login
+Login with your Docker ID to push and pull images from Docker Hub. If you don't have a Docker ID, head over to https://hub.docker.com to create one.
+Username: danielgongying
+Password: 
+Login Succeeded
+danielmacpro:godocker daniel$ docker push
+"docker push" requires exactly 1 argument.
+See 'docker push --help'.
+
+Usage:  docker push [OPTIONS] NAME[:TAG]
+
+Push an image or a repository to a registry
+danielmacpro:godocker daniel$ docker push myimage:v1
+The push refers to repository [docker.io/library/myimage]
+738eb4c32218: Preparing 
+b303db059bc6: Preparing 
+a29f8289e038: Preparing 
+39747431f79f: Preparing 
+fcfab44ef5d3: Preparing 
+f4907c4e3f89: Waiting 
+b17cc31e431b: Waiting 
+12cb127eee44: Waiting 
+604829a174eb: Waiting 
+fbb641a8b943: Waiting 
+denied: requested access to the resource is denied
+danielmacpro:godocker daniel$ docker tag myimage:v1 danielgongying/firstimage
+danielmacpro:godocker daniel$ docker push danielgongying/firstimage
+The push refers to repository [docker.io/danielgongying/firstimage]
+738eb4c32218: Pushed 
+b303db059bc6: Pushed 
+a29f8289e038: Pushed 
+39747431f79f: Pushed 
+fcfab44ef5d3: Pushed 
+f4907c4e3f89: Pushed 
+b17cc31e431b: Pushed 
+12cb127eee44: Pushed 
+604829a174eb: Pushed 
+fbb641a8b943: Pushed 
+latest: digest: sha256:0459c97032f543498287d513668dffb7f5c8f6d2bbbb42b3f9ea8a2d3be1850f size: 2420
+danielmacpro:godocker daniel$ 
