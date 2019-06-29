@@ -33,7 +33,7 @@ func main() {
 
 
 	fs:=afero.NewOsFs()
-	file,err:=fs.Create("/Users/daniel/Desktop/test/test.txt")
+	file,err:=fs.Create("/Users/daniel/Desktop/test.txt")
 	if err!=nil	 {
 		fmt.Println(err)
 
@@ -44,7 +44,7 @@ func main() {
 	b,_:=ioutil.ReadFile(file.Name())
 	fmt.Println(string(b))
     fs.Remove(file.Name())
-	fs.RemoveAll("/Users/daniel/Desktop/test/")
+	//fs.RemoveAll("/Users/daniel/Desktop/")
 	//fs.Remove("/Users/daniel/desktop/test/test.rtf")
 
 

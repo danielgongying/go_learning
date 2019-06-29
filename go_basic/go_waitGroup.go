@@ -18,6 +18,7 @@ import (
 func myFunc(waitgroup *sync.WaitGroup) {
 	fmt.Println("Inside my goroutine")
 	waitgroup.Done()
+
 }
 
 func main() {

@@ -87,5 +87,6 @@ func try() {
 
 func main() {
 	//bind()
+	//gin.SetMode(gin.ReleaseMode)
 	try()
 }

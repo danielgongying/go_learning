@@ -1,7 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1fcd388d-19f2-4aff-a4a8-35e6477e43ab" name="Default Changelist" comment="" />
+    <list default="true" id="1fcd388d-19f2-4aff-a4a8-35e6477e43ab" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Database/mongoDBInGo.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Database/mysqlInGo.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Database/redisInGo.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Database/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go_pkg_learning/net/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go_Intermediate/go_createTempFile.go" beforeDir="false" afterPath="$PROJECT_DIR$/go_Intermediate/go_createTempFile.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go_Intermediate/go_email.go" beforeDir="false" afterPath="$PROJECT_DIR$/go_Intermediate/go_email.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go_advanced/go_http.go" beforeDir="false" afterPath="$PROJECT_DIR$/go_advanced/go_http.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go_advanced/go_time.go" beforeDir="false" afterPath="$PROJECT_DIR$/go_advanced/go_time.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go_basic/go_channel.go" beforeDir="false" afterPath="$PROJECT_DIR$/go_basic/go_channel.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go_basic/go_channel2.go" beforeDir="false" afterPath="$PROJECT_DIR$/go_basic/go_channel2.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go_basic/go_eight.go" beforeDir="false" afterPath="$PROJECT_DIR$/go_basic/go_eight.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go_basic/go_eleven.go" beforeDir="false" afterPath="$PROJECT_DIR$/go_basic/go_eleven.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go_basic/go_fifth.go" beforeDir="false" afterPath="$PROJECT_DIR$/go_basic/go_fifth.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go_basic/go_first.go" beforeDir="false" afterPath="$PROJECT_DIR$/go_basic/go_first.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go_basic/go_forth.go" beforeDir="false" afterPath="$PROJECT_DIR$/go_basic/go_forth.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go_basic/go_interface.go" beforeDir="false" afterPath="$PROJECT_DIR$/go_basic/go_interface.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go_basic/go_nine.go" beforeDir="false" afterPath="$PROJECT_DIR$/go_basic/go_nine.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go_basic/go_second.go" beforeDir="false" afterPath="$PROJECT_DIR$/go_basic/go_second.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go_basic/go_sixth.go" beforeDir="false" afterPath="$PROJECT_DIR$/go_basic/go_sixth.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go_basic/go_third.go" beforeDir="false" afterPath="$PROJECT_DIR$/go_basic/go_third.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go_basic/go_waitGroup.go" beforeDir="false" afterPath="$PROJECT_DIR$/go_basic/go_waitGroup.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go_pkg_learning/IO.go" beforeDir="false" afterPath="$PROJECT_DIR$/go_pkg_learning/IO.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go_pkg_learning/cache.go" beforeDir="false" afterPath="$PROJECT_DIR$/go_pkg_learning/cache.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go_pkg_learning/net/http.go" beforeDir="false" afterPath="$PROJECT_DIR$/go_pkg_learning/net/http.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go_pkg_learning/path.go" beforeDir="false" afterPath="$PROJECT_DIR$/go_pkg_learning/path.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/gin/gin_demo.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendors/gin/gin_demo.go" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,52 +57,87 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendors/gin/gin_demo_1.go">
+        <entry file="file://$PROJECT_DIR$/vendors/gin/upload.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="551">
-              <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+            <state relative-caret-position="209">
+              <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendors/gin/gin_demo.go">
+        <entry file="file://$PROJECT_DIR$/go_pkg_learning/time.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-              <folding>
-                <element signature="e#14#78#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="380">
+              <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/go_pkg_learning/test.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/go_pkg_learning/string.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/gin.log">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/second_commit.patch">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendors/gin/gin_demo_2.go">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/documents/设置GOPATH">
+        <entry file="file://$PROJECT_DIR$/Database/redisInGo.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="37" lean-forward="true" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+            <state>
+              <caret column="12" selection-start-column="12" selection-end-column="12" />
+              <folding>
+                <element signature="e#14#38#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/documents/docker_build_image">
+        <entry file="file:///usr/local/go/src/html/template/template.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="745">
+              <caret line="442" column="1" selection-start-line="442" selection-start-column="1" selection-end-line="449" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Database/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Database/mysqlInGo.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="16" selection-start-column="16" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Database/mongoDBInGo.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="16" selection-start-column="16" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/go_pkg_learning/net/mail.go">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
@@ -82,14 +146,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Go File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>®</find>
+      <find>go say(&quot;world&quot;)</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/go_basic</dir>
@@ -106,42 +171,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/go_basic/go_waitGroup.go" />
-        <option value="$PROJECT_DIR$/go_Intermediate/go_uploadFile.go" />
-        <option value="$PROJECT_DIR$/go_Intermediate/upload.html" />
-        <option value="$PROJECT_DIR$/go_Intermediate/localfile" />
-        <option value="$PROJECT_DIR$/go_Intermediate/test.txt" />
-        <option value="$PROJECT_DIR$/go_Intermediate/go_IO.go" />
-        <option value="$PROJECT_DIR$/go_Intermediate/go_createTempFile.go" />
-        <option value="$PROJECT_DIR$/go_Intermediate/go_creatTempFile2.go" />
-        <option value="$PROJECT_DIR$/go_Intermediate/go_createRestfulAPI.go" />
-        <option value="$PROJECT_DIR$/go_Intermediate/go_createWebServe.go" />
-        <option value="$PROJECT_DIR$/go_Intermediate/go_mysql.go" />
-        <option value="$PROJECT_DIR$/go_Intermediate/go_CLi.go" />
-        <option value="$PROJECT_DIR$/go_Intermediate/go_closure.go" />
-        <option value="$PROJECT_DIR$/go_Intermediate/go_email.go" />
-        <option value="$PROJECT_DIR$/go_basic/go_interface.go" />
-        <option value="$PROJECT_DIR$/go_advanced/go_time.go" />
-        <option value="$PROJECT_DIR$/go_advanced/go_http.go" />
-        <option value="$PROJECT_DIR$/go_pkg_learning/ioutill.go" />
-        <option value="$PROJECT_DIR$/go_pkg_learning/test.html" />
-        <option value="$PROJECT_DIR$/go_pkg_learning/http.go" />
-        <option value="$PROJECT_DIR$/go_pkg_learning/net.go" />
-        <option value="$PROJECT_DIR$/go_pkg_learning/mail.go" />
-        <option value="$PROJECT_DIR$/go_pkg_learning/net/mail.go" />
-        <option value="$PROJECT_DIR$/go_pkg_learning/net/url.go" />
-        <option value="$PROJECT_DIR$/go_pkg_learning/MySQL.go" />
-        <option value="$PROJECT_DIR$/go_pkg_learning/cache.go" />
         <option value="$PROJECT_DIR$/go_pkg_learning/time.go" />
         <option value="$PROJECT_DIR$/go_pkg_learning/carbon.go" />
         <option value="$PROJECT_DIR$/go_pkg_learning/archive.go" />
-        <option value="$PROJECT_DIR$/go_pkg_learning/IO.go" />
-        <option value="$PROJECT_DIR$/go_pkg_learning/path.go" />
         <option value="$PROJECT_DIR$/put_into_docker/dockerFile" />
         <option value="$PROJECT_DIR$/put_into_docker/requirements.txt" />
         <option value="$PROJECT_DIR$/go_pkg_learning/database.go" />
         <option value="$PROJECT_DIR$/go_pkg_learning/errors.go" />
-        <option value="$PROJECT_DIR$/go_pkg_learning/Log.go" />
         <option value="$PROJECT_DIR$/go_pkg_learning/sort.go" />
         <option value="$PROJECT_DIR$/go_pkg_learning/encoding/json.go" />
         <option value="$PROJECT_DIR$/go_pkg_learning/encoding/base64.go" />
@@ -149,22 +185,51 @@
         <option value="$PROJECT_DIR$/go_pkg_learning/text.go" />
         <option value="$PROJECT_DIR$/vendors/gin_demo.go" />
         <option value="$PROJECT_DIR$/vendors/gin.go" />
-        <option value="$PROJECT_DIR$/go_pkg_learning/string.go" />
         <option value="$PROJECT_DIR$/vendors/gin/gin_demo_1.go" />
         <option value="$PROJECT_DIR$/vendors/gin/gin_demo2.go" />
         <option value="$PROJECT_DIR$/vendors/gin/upload.html" />
         <option value="$PROJECT_DIR$/vendors/gin/gin_demo_3.go" />
         <option value="$PROJECT_DIR$/vendors/gin/gin_demo_2.go" />
         <option value="$PROJECT_DIR$/vendors/mysql/mysql_demo.go" />
+        <option value="$PROJECT_DIR$/go_basic/go_first.go" />
+        <option value="$PROJECT_DIR$/go_basic/go_second.go" />
+        <option value="$PROJECT_DIR$/go_basic/go_third.go" />
+        <option value="$PROJECT_DIR$/go_basic/go_forth.go" />
+        <option value="$PROJECT_DIR$/go_basic/go_fifth.go" />
+        <option value="$PROJECT_DIR$/go_basic/go_sixth.go" />
+        <option value="$PROJECT_DIR$/go_basic/go_eight.go" />
+        <option value="$PROJECT_DIR$/go_basic/go_eleven.go" />
+        <option value="$PROJECT_DIR$/go_basic/go_interface.go" />
+        <option value="$PROJECT_DIR$/go_basic/go_channel.go" />
+        <option value="$PROJECT_DIR$/go_basic/go_channel2.go" />
+        <option value="$PROJECT_DIR$/go_basic/go_waitGroup.go" />
+        <option value="$PROJECT_DIR$/go_advanced/go_time.go" />
+        <option value="$PROJECT_DIR$/go_Intermediate/go_CLi.go" />
+        <option value="$PROJECT_DIR$/go_pkg_learning/Log.go" />
+        <option value="$PROJECT_DIR$/go_pkg_learning/path.go" />
+        <option value="$PROJECT_DIR$/go_pkg_learning/string.go" />
+        <option value="$PROJECT_DIR$/go_pkg_learning/cache.go" />
+        <option value="$PROJECT_DIR$/go_advanced/go_http.go" />
         <option value="$PROJECT_DIR$/vendors/gin/gin_demo.go" />
+        <option value="$PROJECT_DIR$/go_pkg_learning/net/demo.html" />
+        <option value="$PROJECT_DIR$/go_pkg_learning/net/testgo.html" />
+        <option value="$PROJECT_DIR$/go_pkg_learning/net/test.html" />
+        <option value="$PROJECT_DIR$/go_pkg_learning/IO.go" />
+        <option value="$PROJECT_DIR$/go_pkg_learning/net/http.go" />
+        <option value="$PROJECT_DIR$/Database/mysqlInGo.go" />
+        <option value="$PROJECT_DIR$/Database/mongoDBInGo.go" />
+        <option value="$PROJECT_DIR$/Database/templates/demo.html" />
+        <option value="$PROJECT_DIR$/Database/index.html" />
+        <option value="$PROJECT_DIR$/Database/templates/index.html" />
+        <option value="$PROJECT_DIR$/Database/redisInGo.go" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="428" />
-    <option name="y" value="32" />
-    <option name="width" value="1202" />
-    <option name="height" value="911" />
+    <option name="x" value="326" />
+    <option name="y" value="23" />
+    <option name="width" value="1244" />
+    <option name="height" value="858" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -172,7 +237,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -182,32 +246,17 @@
             </path>
             <path>
               <item name="Go" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Go" type="462c0819:PsiDirectoryNode" />
-              <item name="vendors" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Go" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Go" type="462c0819:PsiDirectoryNode" />
-              <item name="vendors" type="462c0819:PsiDirectoryNode" />
-              <item name="gin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Go" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="Go" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="GOPATH &lt;Go&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="cassandra&#10;mysql" />
+    <property name="DatabaseDriversLRU" value="cassandra&#10;mysql&#10;oracle" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="GO_FMT" value="true" />
@@ -219,21 +268,23 @@
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/documents" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Diff &amp; Merge" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/documents" />
+      <recent name="$PROJECT_DIR$/vendors/gin" />
+      <recent name="$PROJECT_DIR$/go_pkg_learning" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Database/templates" />
       <recent name="$PROJECT_DIR$/documents" />
       <recent name="$PROJECT_DIR$/vendors" />
       <recent name="$PROJECT_DIR$/vendors/gin" />
       <recent name="$PROJECT_DIR$/go_pkg_learning/net" />
-      <recent name="$PROJECT_DIR$" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/vendors/gin" />
-      <recent name="$PROJECT_DIR$/go_pkg_learning" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -248,15 +299,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build mysql_demo.go">
-    <configuration name="go build gin_demo2.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="Go" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/vendors/gin/gin_demo2.go" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Go Build.go build redisInGo.go">
     <configuration name="go build gin_demo_2.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Go" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -265,70 +308,88 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build gin_demo_3.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build gin_demo.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Go" />
       <working_directory value="$PROJECT_DIR$/" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/vendors/gin/gin_demo_3.go" />
+      <filePath value="$PROJECT_DIR$/vendors/gin/gin_demo.go" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build go_uploadFile.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build go_channel2.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Go" />
       <working_directory value="$PROJECT_DIR$/" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/go_Intermediate/go_uploadFile.go" />
+      <filePath value="$PROJECT_DIR$/go_basic/go_channel2.go" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build mysql_demo.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build http.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Go" />
       <working_directory value="$PROJECT_DIR$/" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/vendors/mysql/mysql_demo.go" />
+      <filePath value="$PROJECT_DIR$/go_pkg_learning/net/http.go" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <list>
-      <item itemvalue="Go Build.go build go_uploadFile.go" />
-      <item itemvalue="Go Build.go build gin_demo2.go" />
-      <item itemvalue="Go Build.go build gin_demo_2.go" />
-      <item itemvalue="Go Build.go build gin_demo_3.go" />
-      <item itemvalue="Go Build.go build mysql_demo.go" />
-    </list>
+    <configuration name="go build redisInGo.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="Go" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/Database/redisInGo.go" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build mysql_demo.go" />
+        <item itemvalue="Go Build.go build redisInGo.go" />
+        <item itemvalue="Go Build.go build http.go" />
+        <item itemvalue="Go Build.go build gin_demo.go" />
+        <item itemvalue="Go Build.go build go_channel2.go" />
         <item itemvalue="Go Build.go build gin_demo_2.go" />
-        <item itemvalue="Go Build.go build gin_demo_3.go" />
-        <item itemvalue="Go Build.go build go_uploadFile.go" />
-        <item itemvalue="Go Build.go build gin_demo2.go" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1fcd388d-19f2-4aff-a4a8-35e6477e43ab" name="Default Changelist" comment="" />
+      <created>1561616588312</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1561616588312</updated>
+      <workItem from="1561616592005" duration="362000" />
+      <workItem from="1561616964091" duration="67000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="429000" />
+  </component>
   <component name="ToolWindowManager">
-    <frame x="428" y="32" width="1202" height="911" extended-state="0" />
-    <editor active="true" />
+    <frame x="326" y="23" width="1244" height="858" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23217392" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17617449" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" weight="0.32908162" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32876712" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.305" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39802226" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32797858" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.30254352" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39759037" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3275218" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3266399" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32876712" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" weight="0.06908584" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.053691275" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.32210243" />
@@ -400,329 +461,336 @@
     <MESSAGE value="add gin_demo" />
     <option name="LAST_COMMIT_MESSAGE" value="add gin_demo" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/go_pkg_learning/net/http.go</url>
-          <line>60</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file:///usr/local/go/src/encoding/base64/base64.go">
+    <entry file="file://$PROJECT_DIR$/go_basic/go_channel.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="373" column="21" selection-start-line="373" selection-start-column="21" selection-end-line="373" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/go/src/bytes/bytes.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="85" column="5" selection-start-line="85" selection-start-column="5" selection-end-line="85" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go_pkg_learning/encoding/base64.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="597">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go_pkg_learning/bytes.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="836">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
+        <state relative-caret-position="399">
+          <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/go_basic/go_waitGroup.go">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+          <folding>
+            <element signature="e#14#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/go_basic/go_waitGroup2.go">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="798">
+          <caret line="47" column="1" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go_basic/users.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go_basic/go_json.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go_basic/go_ten.go">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go_pkg_learning/sort.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/go/src/text/scanner/scanner.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go_pkg_learning/text.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/go/src/github.com/gin-gonic/gin/utils.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="136" column="5" selection-start-line="136" selection-start-column="5" selection-end-line="136" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/go/src/net/http/status.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/go/src/github.com/gin-gonic/gin/recovery.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go_pkg_learning/encoding/json.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1938">
-          <caret line="111" column="12" selection-start-line="111" selection-start-column="12" selection-end-line="111" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/go/src/github.com/gin-gonic/gin/render/xml.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go_Intermediate/go_createWebServe.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go_Intermediate/go_consumeRestfulAPI.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go_Intermediate/go_createTempFile.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/go/src/github.com/gin-gonic/gin/examples/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendors/gin.go" />
-    <entry file="file://$USER_HOME$/go/src/github.com/gin-gonic/gin/routergroup.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/go/src/net/http/server.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="84" column="5" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/go/src/builtin/builtin.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="188" column="5" selection-start-line="188" selection-start-column="5" selection-end-line="188" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/go/src/github.com/gin-gonic/gin/auth.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go_pkg_learning/string.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="31" />
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
           <folding>
-            <element signature="e#14#42#0" expanded="true" />
+            <element signature="e#13#45#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go_pkg_learning/Log.go">
+    <entry file="file://$PROJECT_DIR$/go_advanced/go_time.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="31" column="23" selection-start-line="27" selection-start-column="4" selection-end-line="31" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go_pkg_learning/IO.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go_Intermediate/go_creatTempFile2.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go_basic/go_creatRestfulAPI.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go_basic/go_first.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/go/src/github.com/gin-gonic/gin/gin.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="97" column="4" selection-start-line="97" selection-start-column="4" selection-end-line="97" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendors/gin/upload.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/go/src/fmt/print.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="211" column="5" selection-start-line="211" selection-start-column="5" selection-end-line="211" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/go/src/gopkg.in/go-playground/validator.v8/validator.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="535" selection-start-line="535" selection-end-line="535" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/go/src/gopkg.in/go-playground/validator.v8/cache.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="144" selection-start-line="144" selection-end-line="144" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/go/src/log/log.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="306" column="5" selection-start-line="306" selection-start-column="5" selection-end-line="306" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go_pkg_learning/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go_Intermediate/localfile">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/go/src/github.com/gin-gonic/gin/logger.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1064">
-          <caret line="64" column="4" selection-start-line="64" selection-start-column="4" selection-end-line="64" selection-end-column="4" />
+        <state relative-caret-position="361">
+          <caret line="19" column="15" lean-forward="true" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
           <folding>
-            <element signature="e#181#261#0" expanded="true" />
+            <element signature="e#14#51#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go_Intermediate/go_uploadFile.go">
+    <entry file="file://$PROJECT_DIR$/go_Intermediate/go_CLi.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="44" column="24" selection-start-line="44" selection-start-column="24" selection-end-line="44" selection-end-column="24" />
+        <state relative-caret-position="201">
+          <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/os/file_unix.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1378">
+          <caret line="343" column="5" selection-start-line="343" selection-start-column="5" selection-end-line="343" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/io/io.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-864" />
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/io/ioutil/ioutil.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="95" column="5" selection-start-line="95" selection-start-column="5" selection-end-line="95" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/os/types.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1678">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/io/ioutil/tempfile.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="49" column="44" lean-forward="true" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/os/file.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="484" lean-forward="true" selection-start-line="484" selection-end-line="484" />
           <folding>
-            <element signature="e#14#56#0" expanded="true" />
+            <element signature="e#1443#1536#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go_Intermediate/test.txt">
+    <entry file="file:///usr/local/go/src/io/ioutil/ioutil_test.go">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/go/src/github.com/gin-gonic/gin/binding/uri.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/go/src/github.com/gin-gonic/gin/context.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="744" selection-start-line="744" selection-end-line="747" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendors/gin/gin_demo_1.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/documents/docker_build_image">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/documents/设置GOPATH">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="37" lean-forward="true" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendors/gin/gin_demo_2.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendors/mysql/mysql_demo.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2337">
-          <caret line="126" selection-start-line="126" selection-end-line="126" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendors/gin/gin_demo_3.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendors/gin/gin_demo.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-          <folding>
-            <element signature="e#14#78#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/second_commit.patch">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/gin.log">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go_pkg_learning/ioutill.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="48" column="12" lean-forward="true" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
+          <folding>
+            <element signature="e#14#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go_pkg_learning/Log.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go_pkg_learning/path.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="779">
+          <caret line="45" column="55" selection-start-line="45" selection-start-column="55" selection-end-line="45" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go_pkg_learning/archive.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go_pkg_learning/bytes.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go_pkg_learning/cache.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="47" column="49" selection-start-line="47" selection-start-column="49" selection-end-line="47" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go_pkg_learning/database.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go_pkg_learning/MySQL.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go_basic/go_eleven.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendors/gin/gin_demo.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="87" column="13" selection-start-line="87" selection-start-column="13" selection-end-line="87" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go_basic/go_channel2.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go_basic/go_creatRestfulAPI.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-233" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go_advanced/go_http.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-822">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendors/gin/gin_demo_1.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-956" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendors/gin/gin_demo_2.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1489" />
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/net/http/server.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="2883" selection-start-line="2883" selection-end-line="2883" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/net/http/header.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="35" column="16" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go_pkg_learning/net/url.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go_pkg_learning/net/http.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1558">
+          <caret line="89" column="5" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go_pkg_learning/IO.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go_pkg_learning/net/testgo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/go/src/github.com/gin-gonic/gin/render/json.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1292">
+          <caret line="75" column="14" selection-start-line="75" selection-start-column="14" selection-end-line="75" selection-end-column="14" />
+          <folding>
+            <element signature="e#184#282#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go_pkg_learning/net/test.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendors/gin/upload.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go_pkg_learning/time.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go_pkg_learning/test.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go_pkg_learning/net/mail.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go_pkg_learning/string.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Database/templates/demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Database/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/html/template/template.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="745">
+          <caret line="442" column="1" selection-start-line="442" selection-start-column="1" selection-end-line="449" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Database/mongoDBInGo.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="16" selection-start-column="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Database/mysqlInGo.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="16" selection-start-column="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Database/redisInGo.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" selection-start-column="12" selection-end-column="12" />
+          <folding>
+            <element signature="e#14#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">

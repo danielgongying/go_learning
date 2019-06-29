@@ -9,6 +9,7 @@ import (
 func hello(w http.ResponseWriter, r *http.Request) {
 	t := time.Now()
 	w.Write([]byte("hello world"))
+
 	t1 := time.Since(t)
 	fmt.Print(t1)
 

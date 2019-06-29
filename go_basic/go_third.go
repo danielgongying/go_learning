@@ -1,4 +1,5 @@
-package go_basic
+package main
+
 
 import (
 	"fmt"
@@ -63,6 +64,7 @@ func main() {
 
 	// 忽略的字段为 0 或 空
 	fmt.Println(Books{title: "Go 语言", author: "www.runoob.com"})
+
 
 
 	var Book1 Books        /* 声明 Book1 为 Books 类型 */

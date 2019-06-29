@@ -1,4 +1,5 @@
-package go_basic
+
+package main
 
 import (
 	"fmt"
@@ -34,6 +35,7 @@ func say(s string) {
 }
 func sum(s []int, c chan int) {
 	sum := 0
+
 	for _, v := range s {
 		sum += v
 	}
@@ -41,7 +43,7 @@ func sum(s []int, c chan int) {
 }
 
 func main() {
-	//go say("world")
+	//go say("world")®
 	//say("hello")
 
 	s := []int{7, 2, 8, -9, 4, 0}

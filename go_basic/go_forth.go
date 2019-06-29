@@ -1,4 +1,5 @@
-package go_basic
+package main
+
 import (
 	"fmt"
 )
@@ -18,6 +19,7 @@ slice1 := make([]type, len)
 
  */
 func main() {
+
 	/*var numbers = make([]int,3,5)
 
 	printSlice(numbers)

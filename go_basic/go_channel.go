@@ -7,8 +7,8 @@ import (
 
 func CalculateValue(values chan int) {
 	//【0，10）的随机数
-	value := rand.Intn(10)
-	fmt.Println("Calculated Random Value: {}", value)
+	value := rand.Intn(100)
+	fmt.Println("Calculated Random Value: ", value)
 	//value发到channel
 	values <- value
 }

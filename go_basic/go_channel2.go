@@ -8,7 +8,7 @@ import (
 
 func CalculateValue(c chan int) {
 	value := rand.Intn(100)
-	fmt.Println("Calculated Random Value: {}", value)
+	fmt.Println("Calculated Random Value: ", value)
 	time.Sleep(1000 * time.Millisecond)
 	c <- value
 	fmt.Println("Only Executes after another goroutine performs a receive on the channel")

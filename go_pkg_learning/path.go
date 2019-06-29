@@ -39,7 +39,7 @@ func dir()  {
 func ext()  {
 	fmt.Println(path.Ext("/a/b/c/bar.css")) // .css
 	fmt.Println(path.Ext("/a/b/c/bar"))	// ""
-	fmt.Println(path.Ext("/a/b/c/bar.txt"))	// ""
+	fmt.Println(path.Ext("/a/b/c/bar.txt"))	// .txt
 }
 /*是否绝对路径*/
 func isAbs()  {

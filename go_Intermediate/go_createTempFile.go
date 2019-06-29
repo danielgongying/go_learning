@@ -17,6 +17,7 @@ func main() {
 	defer os.Remove(tmpfile.Name()) // clean up
 
 	fmt.Println(tmpfile.Name())
+
 	//
 	//dir, err := ioutil.TempDir("", "example")
 	//if err != nil {

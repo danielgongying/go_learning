@@ -1,7 +1,8 @@
-package net
+package main
 
 import (
 	"fmt"
+	"html/template"
 	"io"
 	"io/ioutil"
 	"log"
@@ -58,6 +59,22 @@ func parseHttpVersion() {
 	major, minor, ok := http.ParseHTTPVersion("HTTP/1.0")
 	fmt.Println(major, minor, ok)
 }
+
+type Name struct {
+	fname string
+}
+func GODemo(w http.ResponseWriter,req *http.Request)  {
+	//name:= Name{"daniel"}
+	//tpl,_ := template.ParseFiles("testgo.html")
+	//tpl.Execute(w,name)
+	t1, err := template.ParseFiles("test.html")
+	if err != nil {
+		panic(err)
+	}
+	t1.Execute(w, "hello world")
+
+
+}
 func main() {
 	getHttp()
 	parseHttpVersion()
@@ -66,10 +83,12 @@ func main() {
 	http.HandleFunc("/",NOFound)
 	http.HandleFunc("/error",error)
 	http.HandleFunc("/url",Redirect)
+	http.HandleFunc("/test",GODemo)
 	err:=http.ListenAndServe(":8080",nil)
 	if err != nil {
 		log.Fatalln(err)
 	}
+
 
 
 

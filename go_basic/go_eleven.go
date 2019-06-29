@@ -1,7 +1,7 @@
 package main
 import (
 	"fmt"
-	"os/exec"
+	"os/exec"//linux 命令行
 	"runtime"
 )
 func execute() {

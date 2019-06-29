@@ -5,7 +5,7 @@ import (
 )
 
 func SendSimpleMessage(domain, apiKey string) (string, error) {
-	mg := mailgun.NewMailgun("danielgongying@gmail.com","key-gg12345")
+	mg := mailgun.NewMailgun("danielgongying@gmail.com","key-danielgG12345")
 	m := mg.NewMessage(
 		"Excited User <elliot@tutorialedge.net>",
 		"Hello",
@@ -17,6 +17,6 @@ func SendSimpleMessage(domain, apiKey string) (string, error) {
 }
 
 func main(){
-	SendSimpleMessage("danielgongying@gmail.com", "key-gg12345")
+	SendSimpleMessage("danielgongying@gmail.com", "key-danielgG12345")
 
 }
