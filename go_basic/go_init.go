@@ -16,6 +16,7 @@ func init() {
 	initCounter++
 }
 
+
 func main() {
 	fmt.Println("Does nothing of any significance")
 	fmt.Printf("Init Counter: %d\n", initCounter)

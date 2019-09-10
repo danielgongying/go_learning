@@ -2,6 +2,7 @@ package main
 
 import (
 	"database/sql"
+	_ "github.com/go-sql-driver/mysql"
 	"log"
 )
 
@@ -20,7 +21,7 @@ func insert(db *sql.DB) {
 }
 
 func main() {
-	db, err := sql.Open("mysql", "root:daniel@/hello")
+	db, err := sql.Open("mysql", "root:password@tcp(127.0.0.1:3306)/mysql")
 	if err != nil {
 		log.Fatalf("Open database error: %s\n", err)
 	}

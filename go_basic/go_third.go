@@ -24,7 +24,7 @@ func main() {
 	if (ptr != nil) {
 		if (ip != nil) {
 			fmt.Println("ptr不是空指针")
-			fmt.Println("ip不是空指针")
+			fmt.Println("ip不是空指针 ")
 		}else {
 			fmt.Println("ptr不是空指针")
 			fmt.Println("ip是空指针")

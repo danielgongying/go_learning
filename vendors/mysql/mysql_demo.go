@@ -3,10 +3,11 @@ package main
 import (
 	"database/sql"
 	"fmt"
+	_ "github.com/go-sql-driver/mysql"
 )
 
 func try()  {
-	db, err := sql.Open("mysql", "user:password@/database")
+	db, err := sql.Open("mysql", "root:password@tcp(127.0.0.1:3306)/mysql")
 	if err != nil {
 		panic(err.Error())  // Just for example purpose. You should use proper error handling instead of panic
 	}
@@ -51,7 +52,7 @@ func try()  {
 	fmt.Printf("The square number of 1 is: %d", squareNum)
 }
 func openMysql()  {
-	db, err := sql.Open("mysql", "user:password@/dbname")
+	db, err := sql.Open("mysql", "root:password@tcp(127.0.0.1:3306)/mysql")
 	if err != nil {
 		panic(err.Error()) // Just for example purpose. You should use proper error handling instead of panic
 	}
@@ -62,18 +63,19 @@ func openMysql()  {
 	if err != nil {
 		panic(err.Error()) // proper error handling instead of panic in your app
 	}
+	fmt.Print("open mysql succeed!")
 
 }
 func tryOther()  {
 	// Open database connection
-	db, err := sql.Open("mysql", "user:password@/dbname")
+	db, err := sql.Open("mysql", "root:password@tcp(127.0.0.1:3306)/mysql")
 	if err != nil {
 		panic(err.Error())  // Just for example purpose. You should use proper error handling instead of panic
 	}
 	defer db.Close()
-
+	fmt.Print("open mysql succeed!")
 	// Execute the query
-	rows, err := db.Query("SELECT * FROM table")
+	rows, err := db.Query("SELECT * FROM squareNum")
 	if err != nil {
 		panic(err.Error()) // proper error handling instead of panic in your app
 	}
@@ -124,6 +126,8 @@ func tryOther()  {
 }
 func main() {
 
-	openMysql()
+	//try()
+	//openMysql()
+	tryOther()
 }
 

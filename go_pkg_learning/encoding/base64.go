@@ -1,7 +1,11 @@
 package main
 
 import (
-	"bytes"
+	"crypto/md5"
+	"crypto/sha256"
+	"crypto/sha512"
+
+	//"bytes"
 	"encoding/base64"
 	"fmt"
 )
@@ -21,13 +25,16 @@ func encode()  {
 	//fmt.Println(string(dst))
 	//
 	//
-	////解析string
+	//解析string
 	//dst,_=base64.StdEncoding.DecodeString(string(dst))
 	//src = string(dst)
 	//fmt.Println(string(dst))
+	//print(src)
 
-
-
+	data := []byte("123456")
+	fmt.Printf("%x", md5.Sum(data))
+	fmt.Printf("%x,", sha256.Sum256(data))
+	fmt.Printf("%x,", sha512.Sum512(data))
 
 
 }
